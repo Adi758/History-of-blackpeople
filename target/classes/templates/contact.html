@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Us</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <div th:replace="fragments/header :: header"></div>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <div class="contact-details">
+        <div class="contact-info">
+          <p><span>Email:</span>example@example.com</p>
+          <p><span>Phone:</span>123-456-7890</p>
+          <h2>Customer Services:</h2>
+          <p class="services">Monday-Friday, 9 AM - 5 PM</p>
+        </div>
+
+        <div class="contact-form">
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" id="name" name="name" placeholder="Your name" />
+
+          <!-- <label for="email">Email:</label> -->
+          <input type="text" id="email" name="email" placeholder="Your email" />
+
+          <!-- <label for="message">Message:</label> -->
+          <textarea id="message" name="message" placeholder="Your message"></textarea>
+
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleAccountOptions() {
+        const accountOptions = document.getElementById('accountOptions');
+        if (accountOptions.style.display === 'none') {
+          accountOptions.style.display = 'block';
+        } else {
+          accountOptions.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>

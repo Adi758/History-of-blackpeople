@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sign Up</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form id="signup-form" action="/register" method="post">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstName" required />
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastName" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="userType">User Type</label>
+        <select name="userType" id="userType">
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+
+        <input type="checkbox" id="terms" name="terms" required />
+        <lable for="terms" class="terms">I agree to the Terms of Service and Privacy Policy</lable>
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="login">Already have an account? <a href="/login">Log In</a></p>
+    </div>
+  </body>
+</html>
