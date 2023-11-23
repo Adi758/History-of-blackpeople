@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login Page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <form action="/login-validation" method="post">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <button type="submit">Login</button>
+        </div>
+        <div class="form-group">
+          <button type="button" class="signup-button" onclick="signup()">Signup</button>
+        </div>
+        <div id="error-container" class="error-message"></div>
+      </form>
+      <div th:if="${error}">
+		  <p class="alert" th:text="${error}"></p>
+      </div>
+    </div>
+    <script type="text/javascript">
+	      function signup() {
+	        window.location.href = "/signup";
+	      }
+    </script>
+  </body>
+</html>

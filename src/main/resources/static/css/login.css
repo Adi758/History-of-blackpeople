@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+body {
+  background-color: #474745;
+  background-size: cover;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  border: 2px solid #e3e8eb;
+  border-radius: 5px;
+  background-color: #b7c1c3;
+  box-shadow: 0 0 5px rgba(236, 7, 7, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #474745;
+  font-family: 'Comic sans ms';
+}
+
+form {
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #889293;
+}
+
+.form-group input[type='text'],
+.form-group input[type='password'] {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #ccd6d8;
+  border: 1px solid #474745;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  background-color: #474745;
+  color: #ccd6d8;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #e3e8eb;
+  color: #474745;
+}
+
+.contain {
+  padding: 16px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.alert {
+	margin-top: 15px;
+	font-size: 14px;
+	color: red;
+}
