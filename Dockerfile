@@ -1,6 +1,6 @@
 FROM maven:3.8.2-jdk-11 AS build
 COPY . .
-RUN mvn clean  
+RUN mvn clean install 
 
 
 FROM openjdk:11-jdk
