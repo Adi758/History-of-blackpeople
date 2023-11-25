@@ -1,6 +1,6 @@
 FROM maven:3.8.2-jdk-11 AS build
 COPY . .
-RUN mvn clean package -eprod -DskipTests 
+RUN mvn clean package -Xprod -DskipTests 
 
 
 FROM openjdk:11-jdk
