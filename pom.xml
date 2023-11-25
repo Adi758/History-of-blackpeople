@@ -73,5 +73,19 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<profiles>
+    <profile>
+        <id>prod</id>
+        <dependencies>
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>example-library</artifactId>
+                <version>1.0</version>
+            </dependency>
+        </dependencies>
+    </profile>
+</profiles>
+
 
 </project>
